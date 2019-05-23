@@ -9,6 +9,6 @@ cur=database.cursor()
 cur.execute(QUERY)
 result=cur.fetchall()
 
-c = csv.writer(open('dbdump01.csv', 'w'))
+c = csv.writer(open('dumpcsv.csv', 'w'))
 for x in result:
     c.writerow(x)
